@@ -24,7 +24,7 @@ public class BookingController {
 
     @PostMapping("/booking")
     public String bookTicket(@ModelAttribute Passengerdetails details, Model model) {
-        passengerService.Booking(details,"harish");
+        passengerService.Booking(details,"******");
         model.addAttribute("message", "Booking successful for " + details.getName());
         return "dashboard"; // Redirect to dashboard after booking
     }
